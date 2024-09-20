@@ -4,3 +4,4 @@ fontawesomefree==6.6.0
 gunicorn==23.0.0
 packaging==24.1
 sqlparse==0.5.1
+whitenoise==6.7.0
