@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Breaker</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    <script src="{% static 'home.js' %}"></script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Br34k3r <span>TWS</span>.</a>
+        <nav class="navbar">
+            <ul class="main-menu">
+                <li><a href="/" class="active">Home<span></span></a></li>
+                <li><a href="#">Portfolio<span></span></a></li>
+                <li><a href="#">Projecs<span></span></a></li>
+                <li><a href="/about">About<span></span></a></li>
+                <li><a href="#">Contact<span></span></a></li>
+            </ul>
+        </nav>
+        <button class="fa fa-bars" aria-hidden="true" id="menu-icon"></button>
+        <script>
+            const navBtn = document.querySelector('#menu-icon');
+            const mainMenu = document.querySelector('.main-menu');
+            const navBar = document.querySelector('.navbar');
+
+            navBtn.addEventListener('click',()=>{
+            navBtn.classList.toggle('active');
+            navBar.classList.toggle('active');
+            mainMenu.classList.toggle('active');
+        })
+        </script>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Breaker</span></h1>
+            <div class="text-animate">
+                <h3>Penetration Testing Specialist</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam perspiciatis vitae enim atque. Rerum veritatis ex, nulla ut tempore voluptate fugiat voluptatem ipsa debitis beatae repudiandae ullam esse praesentium autem aperiam in.</p>
+            <div class="btn-box">
+                <button href="#" class="btn">Hire me</button>
+                <button href="#" class="btn">Let's Talk</button>
+            </div>
+        </div>
+        <div class="home-sci">
+            <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://github.com/BreakingTWS"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
+        <div class="home-imgHover"></div>
+    </section>
+</body>
+</html>
